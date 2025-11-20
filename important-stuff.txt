@@ -1,0 +1,11 @@
+%		Prints a % character.
+d, i	Print an int as a signed integer. %d and %i are synonymous for output, but are different when used with scanf for input (where using %i will interpret a number as hexadecimal if it's preceded by 0x, and octal if it's preceded by 0.)
+u		Print decimal unsigned int.
+x, X	Print an unsigned int as a hexadecimal number. x uses lower-case letters and X uses upper-case.
+s		Print a null-terminated (\0) string.
+c		Print a single character (char).
+p		Print the address of a pointer or any other variable. The output is displayed in hexadecimal value. It's a format specifier which is used if we want to print data of type (void *).
+
+return:
+	If a positive value is returned (indicating the number of characters written) it means the operation was successful.
+	If a negative number is returned there was some error.
