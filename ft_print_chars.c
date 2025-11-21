@@ -6,11 +6,11 @@
 /*   By: vguerra- <vguerra-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 23:30:32 by vguerra-          #+#    #+#             */
-/*   Updated: 2025/11/20 23:33:42 by vguerra-         ###   ########.fr       */
+/*   Updated: 2025/11/20 23:46:24 by vguerra-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "printft.h"
 
 int	ft_print_char(int c)
 {

@@ -6,11 +6,11 @@
 /*   By: vguerra- <vguerra-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 20:21:16 by vguerra-          #+#    #+#             */
-/*   Updated: 2025/11/20 23:25:49 by vguerra-         ###   ########.fr       */
+/*   Updated: 2025/11/20 23:49:09 by vguerra-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "printft.h"
 
 static int	ft_eval_format(va_list args, const char format)
 {
@@ -21,19 +21,19 @@ static int	ft_eval_format(va_list args, const char format)
 		len_print += ft_print_char(va_arg(args, int));
 	else if (format == 's')
 		len_print += ft_print_str(va_arg(args, char *));
-	else if (format == 'p')
-		len_print += ft_print_ptr(va_arg(args, unsigned long long));
-	else if (format == 'd' || format == 'i')
-		len_print += ft_print_nbr(va_arg(args, int));
-	else if (format == 'u')
-		len_print += ft_print_unsigned(va_arg(args, unsigned int));
-	else if (format == 'x' || format == 'X')
-		len_print += ft_print_hex(va_arg(args, unsigned int), format);
-	else if (format == '%')
-		len_print += ft_print_char('%');
+	// else if (format == 'p')
+	// 	len_print += ft_print_ptr(va_arg(args, unsigned long long));
+	// else if (format == 'd' || format == 'i')
+	// 	len_print += ft_print_nbr(va_arg(args, int));
+	// else if (format == 'u')
+	// 	len_print += ft_print_unsigned(va_arg(args, unsigned int));
+	// else if (format == 'x' || format == 'X')
+	// 	len_print += ft_print_hex(va_arg(args, unsigned int), format);
+	// else if (format == '%')
+	// 	len_print += ft_print_char('%');
 	return (len_print);
-
 }
+
 int	ft_printf(const char *format, ...)
 {
 	va_list	args;
