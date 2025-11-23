@@ -6,11 +6,11 @@
 /*   By: vguerra- <vguerra-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/23 20:29:26 by vguerra-          #+#    #+#             */
-/*   Updated: 2025/11/23 20:37:01 by vguerra-         ###   ########.fr       */
+/*   Updated: 2025/11/23 20:41:43 by vguerra-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_print_hex(unsigned int n, const char format)
 {
@@ -49,7 +49,7 @@ int	ft_print_ptr(unsigned long long ptr)
 	len = 0;
 	if (ptr == 0)
 	{
-		len += write(1, "(nil)", 5);
+		len += write(1, "(null)", 6);
 		return (len);
 	}
 	len += write(1, "0x", 2);
