@@ -9,3 +9,8 @@ p		Print the address of a pointer or any other variable. The output is displayed
 return:
 	If a positive value is returned (indicating the number of characters written) it means the operation was successful.
 	If a negative number is returned there was some error.
+
+
+to study:
+
+	- porque "null" nao funciona como output para a opção 'p' caso ponteiro seja invalido?

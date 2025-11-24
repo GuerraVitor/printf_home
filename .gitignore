@@ -1,2 +1,5 @@
 #testers
 /printfTester
+
+#compileds
+*.o
